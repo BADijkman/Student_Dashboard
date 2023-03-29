@@ -1,11 +1,12 @@
 import React from "react";
+import "../CSS/topbar.css";
 
-const topBar = () => {
+const Topbar = () => {
   return (
-    <div>
-      <h1>topbar</h1>
+    <div className="topbar">
+      <span className="logo">Student Dashboard</span>
     </div>
   );
 };
 
-export default topBar;
+export default Topbar;

@@ -1,11 +1,29 @@
 import React from "react";
+import "../CSS/sidebar.css";
+import { Home, Group, Timeline } from "@mui/icons-material";
 
-const sideBar = () => {
+import { Link } from "react-router-dom";
+
+const Sidebar = () => {
   return (
-    <div>
-      <h2>Sidebar</h2>
+    <div className="sidebar">
+      <div className="sidebarWrapper">
+        <div className="sidebarTitle"> Menu</div>
+
+        <ul className="sidebarList">
+          <li className="sidebarListItem">
+            <Home className="sidebarIcon"/> Home
+          </li>
+          <li className="sidebarListItem">
+            <Timeline className="sidebarIcon"/> Analytics
+          </li>
+          <li className="sidebarListItem">
+            <Group className="sidebarIcon"/> Students
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
 
-export default sideBar;
+export default Sidebar;
