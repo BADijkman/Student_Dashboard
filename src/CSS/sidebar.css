@@ -1,5 +1,5 @@
 .sidebar {
-  /* flex: 0.5; */
+  flex: 0.5;
   /* height: calc(100hv - 50px); */
   height: 100hv;
 
@@ -41,3 +41,5 @@
 .sidebarIcon {
   margin-right: 8px;
 }
+
+
