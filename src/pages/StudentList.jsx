@@ -25,8 +25,9 @@ const StudentList = () => {
         );
       },
     },
-    { field: "firstName", headerName: "First Name", width: 150 },
-    { field: "lastName", headerName: "Last Name", width: 250 },
+    { field: "firstName", headerName: "First Name", width: 100 },
+    { field: "lastName", headerName: "Last Name", width: 150 },
+    {field: "gender", headerName: "Gender", width: 200},
     {
       field: "info",
       headerName: "",

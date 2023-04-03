@@ -4,7 +4,8 @@
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   margin-left: 20px;
   background-color: rgb(234, 242, 231);
-  margin :20px;
+  border: 1px solid rgb(211, 227, 205);
+  margin: 20px;
 }
 
 .studentTitleContainer {
@@ -15,7 +16,7 @@
 .studentTitle {
   color: rgb(4, 129, 54);
   margin-top: 15px;
-  margin-left: -25px;
+  margin-left: -45px;
 }
 
 .studentDetailsBtn {
@@ -27,10 +28,9 @@
   cursor: pointer;
 }
 
-.student{
+.student {
   background-color: rgb(243, 246, 241);
 }
-
 
 .studentImg {
   width: 40px;
