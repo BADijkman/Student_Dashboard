@@ -24,7 +24,7 @@ const Sidebar = () => {
 
           
 
-          <Link to="/Students" className="link">
+          <Link to="/StudentList" className="link">
             <li className="sidebarListItem">
               <Group className="sidebarIcon" /> Students
             </li>

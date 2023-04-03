@@ -3,7 +3,7 @@ import "./App.css"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Students from "./pages/Students";
+import StudentList from "./pages/StudentList";
 import Analytics from "./pages/Analytics";
 
 import TopBar from "./components/Topbar";
@@ -20,7 +20,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Students" element={<Students />} />
+            <Route path="/StudentList" element={<StudentList />} />
             <Route path="/Analytics" element={<Analytics />} />
           </Routes>
         </div>
