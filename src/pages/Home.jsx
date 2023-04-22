@@ -1,7 +1,4 @@
 import React from "react";
-
-
-
 import Textblock from "../components/Textblock"
 import Widget from"../components/Widget";
 import "../CSS/home.css";
@@ -15,13 +12,12 @@ const Home = () => {
          <Textblock/>
          <Textblock/>
         </div>
-       
-        
-    
       </div>
       <div className="homeWidgets">
         <Widget />
       </div>
+      <div><Textblock/></div>
+
     </div>
   );
 };

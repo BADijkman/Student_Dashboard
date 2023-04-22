@@ -1,7 +1,9 @@
 .widgetLarge {
     flex: 4;
-    height: 100%;
-    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 98%;
+    padding: 0px;
     background-color: rgb(234, 242, 231);
 }
 

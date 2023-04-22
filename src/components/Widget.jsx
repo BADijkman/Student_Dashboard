@@ -47,8 +47,6 @@ const Widget = () => {
           data={averagesPerStudent}
           title="Student Analytics Enjoyability and Difficulty Per Student"
           grid
-        
-     
         />
       </div>
     </div>
