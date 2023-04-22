@@ -1,0 +1,107 @@
+
+.student {
+  flex: 1;
+  margin: 20px;
+  border: black 1px solid;
+}
+
+.studentTitle {
+  color: rgb(4, 129, 54);
+  margin-top: -10px;
+}
+
+.studentTitleContainer {
+  margin-left:60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.studentGoBackButton {
+  width: 80px;
+  border: none;
+  background-color:rgb(4, 129, 54);
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px 0px 30px 30px;
+}
+
+.studentContainer {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: rgb(234, 242, 231);
+  border: 1px solid rgb(211, 227, 205);
+}
+
+.studentProfile {
+  flex: 4;
+  padding: 10px;
+
+}
+
+.studentChartContainer {
+  flex: 2;
+  padding: 40px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.studentProfileTop {
+  display: flex;
+  align-items: center;
+}
+
+.studentProfileImg {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.studentProfileTopTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.studentProfileUsername {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.studentProfileStudentTitle {
+  font-weight: 300;
+}
+
+.studentProfileTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+}
+
+.studentProfileInfo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  color: #444;
+  font-weight: 300;
+}
+
+.studentProfileBottom {
+  margin-top: 20px;
+}
+
+.studentProfileIcon {
+  font-size: 16px !important;
+}
+
+.studentProfileInfoTitle {
+  margin-left: 10px;
+}

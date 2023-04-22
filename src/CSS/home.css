@@ -1,6 +1,18 @@
 .home {
-    /* flex: 1; */
+    flex: 1;
     padding: 20px;
+  
+}
 
-    background-color: rgb(179, 124, 124);
+.homeTextblock__head{
+    margin-bottom: 40px;
+    
+   
+}
+.homeTextblock{
+    display: flex;
+    flex-direction: row;
+   
+    flex-wrap: wrap;
+    width: 100%;
 }

@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import StudentList from "./pages/StudentList";
 import Analytics from "./pages/Analytics";
+import Student from"./pages/Student";
 
 import TopBar from "./components/Topbar";
 import SideBar from "./components/Sidebar";
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/StudentList" element={<StudentList />} />
             <Route path="/Analytics" element={<Analytics />} />
+            <Route path="/students/:firstName" element={<Student />} />
           </Routes>
         </div>
 

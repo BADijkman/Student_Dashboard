@@ -3,12 +3,9 @@
   /* height: calc(100hv - 50px); */
   height: 100hv;
   margin :20px;
-
-
   max-width: 200px;
   background-color: rgb(234, 242, 231);
   border: 1px solid rgb(211, 227, 205);
-  top: 50px;
 }
 
 .sidebarWrapper {
@@ -23,7 +20,7 @@
 
 .sidebarList {
   list-style: none;
-  padding: 5px;
+  padding: px;
   font-size: 18px;
 }
 
@@ -32,7 +29,7 @@
   width: 200px;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  align-items:center;
 }
 
 .sidebarListItem.active,
@@ -41,7 +38,7 @@
 }
 
 .sidebarIcon {
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 
