@@ -23,9 +23,9 @@ const Chart = ({ title, data, grid, dataKeys, className }) => {
   // checkbox to toggle legend bars between Enjotability and Difficulty
   const renderLegend = () => {
     return (
-      <ul className="renderLegendCheckboxesContainer">
+      <ul className="CheckboxesContainer">
         {Object.keys(legends).map((key) => (
-          <li className="renderLegendCheckboxes" key={`item-${key}`}>
+          <li className="LegendCheckboxes" key={`item-${key}`}>
             <input
               className="checkbox"
               type="checkbox"
@@ -54,10 +54,6 @@ const Chart = ({ title, data, grid, dataKeys, className }) => {
           <Tooltip />
           <Legend content={renderLegend} />
           {grid && <CartesianGrid stroke="#e0dfdf" strokeDasharray="3 3" />}
-          
-
-
-
           {legends &&
             Object.keys(legends)
               .filter((key) => legends[key].enabled)

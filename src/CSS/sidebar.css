@@ -20,8 +20,12 @@
 
 .sidebarList {
   list-style: none;
-  padding: px;
   font-size: 18px;
+}
+
+.sibebarList_2{
+  margin-top: 20px;
+
 }
 
 .sidebarListItem {
@@ -35,6 +39,7 @@
 .sidebarListItem.active,
 .sidebarListItem:hover {
   background-color: rgb(155, 182, 164);
+  width: 150px;
 }
 
 .sidebarIcon {

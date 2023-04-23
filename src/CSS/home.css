@@ -1,17 +1,22 @@
 .home {
-    flex: 1;
-    margin-top: 20px;
+  flex: 1;
+  margin-top: 20px;
 }
 
-.homeTextblock__head{
-    margin-bottom: 40px; 
-   
+.homeTextblock__head {
+  margin-bottom: 40px;
 }
 
-.homeTextblock{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+.homeTextblock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 99%;
 }
 
+.homeWidget {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 99%;
+}

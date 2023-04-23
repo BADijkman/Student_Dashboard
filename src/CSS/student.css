@@ -33,7 +33,7 @@
   margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
-  background-color: rgb(234, 242, 231);
+  background-color: rgb(228, 234, 227);
   border: 1px solid rgb(211, 227, 205);
 }
 
@@ -102,3 +102,17 @@
 .studentProfileInfoTitle {
   margin-left: 10px;
 }
+
+.analyticsChartLegend {
+  margin-top: -20px;
+  list-style-type: none;
+}
+
+.legendEnjoyabilityIcon {
+  color: #4b9167;
+}
+
+.legendDifficultyIcon {
+  color: #6bcf93;
+}
+

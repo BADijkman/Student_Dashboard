@@ -1,10 +1,11 @@
 .maincontainer{
     display: flex;
-    background-color: rgb(218, 219, 218);
+    background-color: #DADBDA;
+    margin-top: 30px;
   
 }
 
 .link {
     text-decoration: none;
-    color: rgb(46, 43, 43);
+    color: rgb(100, 95, 95);
   }

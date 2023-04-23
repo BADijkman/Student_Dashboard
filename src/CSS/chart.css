@@ -9,18 +9,16 @@
     margin-bottom: 30px;
 }
 
-.renderLegendCheckboxesContainer {
+.CheckboxesContainer {
     list-style: none;
     display: flex;
     justify-content: left;
 }
 
-.renderLegendCheckboxes {
+.Checkboxes {
     margin-left: 20px;
     padding-left: 20px;
-    color:rgba(55, 65, 68, 0.75);
+    color:rgba(63, 72, 74, 0.75);
+
 }
 
-.checkbox {
-    margin-right: 4px;
-}

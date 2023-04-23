@@ -147,29 +147,9 @@ const Student = () => {
             </li>
           </ul>
         </div>
-
-
-
-     
-
-
-
-
       <Link to="/studentList">
               <button className="studentGoBackButton"> Back </button>
       </Link>
-
-   
-
-
-
-
-
-
-
-
-
-
 
     </div>
   );
