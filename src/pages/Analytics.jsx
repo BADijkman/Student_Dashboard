@@ -5,7 +5,6 @@ import studentsData from "../studentData.json";
 import Chart from "../components/Chart";
 import StudentChart from "../components/Studentchart";
 
-
 const groupDataByKey = (key, data) => {
   return data.reduce((group, data) => {
     const dataKey = data[key];
