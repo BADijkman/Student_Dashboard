@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const StudentChart = ({ title, data, grid }) => {
+const Studentchart = ({ title, data, grid }) => {
   return (
     <div className="studentHomepageChart">
       <h3 className="studentHomepageChartTitle"> {title} </h3>
@@ -34,4 +34,4 @@ const StudentChart = ({ title, data, grid }) => {
   );
 };
 
-export default StudentChart;
+export default Studentchart;
