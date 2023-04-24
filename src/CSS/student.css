@@ -31,8 +31,9 @@
 .studentContainer {
   display: flex;
   margin-top: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
+
+  margin-right: 20px;
+  margin-left: 0px;
   background-color: rgb(228, 234, 227);
   border: 1px solid rgb(211, 227, 205);
 }
