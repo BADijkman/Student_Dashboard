@@ -1,16 +1,12 @@
 .topbar {
   width: 100%;
-  background-color: #DADBDA;
+  background-color: #dadbda;
   margin-top: 50px;
- 
-
 }
 
 .logo {
   font-weight: bold;
   font-size: 50px;
   color: rgb(3, 103, 43);
-
   margin-left: 30px;
- 
 }

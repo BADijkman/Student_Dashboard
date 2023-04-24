@@ -11,16 +11,14 @@ import {
 } from "recharts";
 import "../CSS/chart.css";
 
-const Chart = ({ title, data, grid, dataKeys, className }) => {
+const Chart = ({ title, data, grid, dataKeys }) => {
   const [legends, setLegends] = useState(dataKeys);
   const toggleLegend = (legendKey, enabled) => {
     const legendGroup = legends;
-
     legendGroup[legendKey].enabled = enabled;
-
     setLegends({ ...legendGroup });
   };
-  // checkbox to toggle legend bars between Enjotability and Difficulty
+
   const renderLegend = () => {
     return (
       <ul className="CheckboxesContainer">
@@ -40,7 +38,7 @@ const Chart = ({ title, data, grid, dataKeys, className }) => {
   };
 
   return (
-    <div className={className ?? "chart"}>
+    <div className={"chart"}>
       <h3 className="chartTitle"> {title} </h3>
       <ResponsiveContainer width="100%" aspect={4 / 1}>
         <BarChart data={data}>

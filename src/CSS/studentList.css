@@ -9,8 +9,8 @@
   margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
- 
 }
+
 .studentTitle {
   color: rgb(4, 129, 54);
   margin-top: 15px;
@@ -28,7 +28,6 @@
 
 .student {
   background-color: rgb(234, 242, 231);
-  /* background-color:rgb(243, 246, 241); */
 }
 
 .studentImg {

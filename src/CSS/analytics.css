@@ -1,40 +1,38 @@
 .analytics {
-    flex: 4;
-    padding: 20px;
+  flex: 4;
+  padding: 20px;
 }
 
 .analyticsTitle {
-    color:#048136;
-    margin-left: 5px;
-    margin-top: -15px;
-    margin-bottom: 20px;
+  color: #048136;
+  margin-left: 5px;
+  margin-top: -15px;
+  margin-bottom: 20px;
 }
 
 .analyticsChartContainer {
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 5px;
-    background-color:rgb(234, 242, 231);
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+  background-color: rgb(234, 242, 231);
 }
 
-
-
 .analyticsChartLegend {
-    list-style: none;
-    margin-bottom: 10px;
-    margin-left: -22px;
-    color:rgb(29, 70, 88);
+  list-style: none;
+  margin-bottom: 10px;
+  margin-left: -22px;
+  color: rgb(29, 70, 88);
 }
 
 .legendListItem {
-    display: flex; 
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .legendDifficultyIcon {
-    color: #6BCF93;
+  color: #6bcf93;
 }
 
 .legendEnjoyabilityIcon {
-    color: #4B9167;
+  color: #4b9167;
 }

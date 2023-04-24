@@ -41,8 +41,8 @@ const Widget = () => {
   const averagesPerStudent = getAveragesForGroup(studentDataPerName);
 
   return (
-    <div className="widgetLarge">
-      <div className="widgetLargeChartContainer">
+    <div className="widget">
+      <div className="widgetChartContainer">
         <StudentChart
           data={averagesPerStudent}
           title="Student Analytics Enjoyability and Difficulty Per Student"

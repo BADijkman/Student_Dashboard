@@ -1,8 +1,7 @@
 .sidebar {
   flex: 0.5;
-  /* height: calc(100hv - 50px); */
   height: 100hv;
-  margin :20px;
+  margin: 20px;
   max-width: 200px;
   background-color: rgb(234, 242, 231);
   border: 1px solid rgb(211, 227, 205);
@@ -23,9 +22,8 @@
   font-size: 18px;
 }
 
-.sibebarList_2{
+.sibebarList_2 {
   margin-top: 20px;
-
 }
 
 .sidebarListItem {
@@ -33,7 +31,7 @@
   width: 200px;
   cursor: pointer;
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
 .sidebarListItem.active,
@@ -45,5 +43,3 @@
 .sidebarIcon {
   margin-right: 7px;
 }
-
-

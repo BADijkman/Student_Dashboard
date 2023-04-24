@@ -1,15 +1,13 @@
-.widgetLarge {
-    flex: 3;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-
-    width: 95%;
-
-    background-color: rgb(234, 242, 231);
+.widget {
+  flex: 3;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  width: 95%;
+  background-color: rgb(234, 242, 231);
 }
 
-.widgetLargeChartContainer {
-    padding: 10px;
-    margin: 10px;
+.widgetContainer {
+  padding: 10px;
+  margin: 10px;
 }

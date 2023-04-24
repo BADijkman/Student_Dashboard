@@ -2,7 +2,6 @@
   background-color: rgb(234, 242, 231);
   display: flex;
   flex-direction: column;
-  /* flex-basis: 100%; */
   flex: 1;
   padding: 10px;
   background-color: rgb(234, 242, 231);

@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/analytics.css";
 import Brightness1Icon from "@mui/icons-material/Brightness1";
-// import Tooltip from "@mui/material/Tooltip";
-
 import studentsData from "../studentData.json";
 import Chart from "../components/Chart";
 import StudentChart from "../components/Studentchart";
 
-// Reduce all data into project-groups
 const groupDataByKey = (key, data) => {
   return data.reduce((group, data) => {
     const dataKey = data[key];
-
     group[dataKey] = group[data.project] ?? [];
     group[dataKey].push({
       name: data.name,
@@ -19,15 +15,13 @@ const groupDataByKey = (key, data) => {
       difficulty: data.difficulty,
       enjoyability: data.enjoyability,
     });
-
     return group;
   }, {});
 };
 
-// Calculate averages group project
 const getAveragesForGroup = (data) => {
   return Object.keys(data).map((key) => {
-    const totalAmount = data[key].length; // totaal over 1 student
+    const totalAmount = data[key].length;
 
     const averageEnjoyability =
       data[key].reduce((a, b) => a + b.enjoyability, 0) / totalAmount;
@@ -42,7 +36,6 @@ const getAveragesForGroup = (data) => {
   });
 };
 
-// Calculate averages per student
 const mainProjectAverages = (projectAverages) => {
   return projectAverages.reduce((group, data) => {
     const mainKey = data.project.split("-")[0].trim();
@@ -89,7 +82,6 @@ const Analytics = () => {
     } else {
       setChartData(averagesPerProject);
     }
-    // eslint-disable-next-line
   }, [groupProjects]);
 
   return (
@@ -122,14 +114,6 @@ const Analytics = () => {
             Enjoyability
           </li>
         </ul>
-
-        {/* <div className="groupProjectCheckbox">
-                    <Tooltip title="Group projects together for a better overview in chart." placement="top">
-                    <input className="checkbox" type="checkbox" id="groupProjects" name="groupProjects" checked={groupProjects} onChange={(e) => setGroupProjects(e.target.checked)} />
-                    </Tooltip>
-                    <label htmlFor="groupProjects">Group projects</label><br /><br />
-                    
-                </div> */}
       </div>
 
       <div className="analyticsChartContainer">

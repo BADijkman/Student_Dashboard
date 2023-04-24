@@ -1,18 +1,14 @@
 .footer {
-    width: 100%;
-
+  width: 100%;
 }
 
-.footerWrapper{
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-
+.footerWrapper {
+  display: flex;
+  justify-content: center;
 }
 
-.footerText{
-    font-size: 14px;
-    font-weight: 200;
-    color:rgb(111, 117, 118);
-
+.footerText {
+  font-size: 14px;
+  font-weight: 200;
+  color: rgb(111, 117, 118);
 }

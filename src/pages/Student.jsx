@@ -9,18 +9,14 @@ import {
   PermIdentity,
   PhoneAndroid,
 } from "@mui/icons-material";
-
 import { studentInfo } from "../studentInfo";
 import studentsData from "../studentData.json";
 import Chart from "../components/Chart";
 
-
-// get studentDetails by ID
 const getStudentByFirstName = (firstName) => {
   return studentInfo.find((student) => student.firstName === firstName);
 };
 
-// group data
 const dataPerStudent = studentsData.reduce((group, data) => {
   group[data.name] = group[data.name] ?? [];
 
@@ -33,18 +29,9 @@ const dataPerStudent = studentsData.reduce((group, data) => {
   return group;
 }, {});
 
-
-
-
-
-
 const Student = () => {
   const params = useParams();
   let studentInfo = getStudentByFirstName(params.firstName);
-
-  // if (! studentInfo) {
-  //     return (console.log("not found"))
-  // }
 
   return (
     <div className="student">
@@ -61,9 +48,8 @@ const Student = () => {
               className="studentProfileImg"
             />
             <span className="studentProfileUsername">
-                {studentInfo.firstName} {studentInfo.lastName}
+              {studentInfo.firstName} {studentInfo.lastName}
             </span>
-            
           </div>
           <div className="studentProfileBottom">
             <span className="studentProfileTitle"> Account Details </span>
@@ -85,7 +71,6 @@ const Student = () => {
             <div className="studentProfileInfo">
               <PhoneAndroid className="studentProfileIcon" />
               <span className="studentProfileInfoTitle">
-                
                 {studentInfo.phone}{" "}
               </span>
             </div>
@@ -93,7 +78,6 @@ const Student = () => {
             <div className="studentProfileInfo">
               <MailOutline className="studentProfileIcon" />
               <span className="studentProfileInfoTitle">
-         
                 {studentInfo.email}{" "}
               </span>
             </div>
@@ -101,7 +85,6 @@ const Student = () => {
             <div className="studentProfileInfo">
               <LocationSearching className="studentProfileIcon" />
               <span className="studentProfileInfoTitle">
-              
                 {studentInfo.location}{" "}
               </span>
             </div>
@@ -109,48 +92,45 @@ const Student = () => {
         </div>
       </div>
 
-
-
       <div className="studentChartContainer">
-          <Chart
-            data={dataPerStudent[studentInfo.firstName]}
-            title={`Student Projects Chart of ${studentInfo.firstName} ${studentInfo.lastName}`}
-            grid
-            dataKeys={{
-              difficulty: {
-                color: "#6BCF93",
-                enabled: true,
-              },
-              enjoyability: {
-                color: "#4B9167",
-                enabled: true,
-              },
-            }}
-          />
+        <Chart
+          data={dataPerStudent[studentInfo.firstName]}
+          title={`Student Projects Chart of ${studentInfo.firstName} ${studentInfo.lastName}`}
+          grid
+          dataKeys={{
+            difficulty: {
+              color: "#6BCF93",
+              enabled: true,
+            },
+            enjoyability: {
+              color: "#4B9167",
+              enabled: true,
+            },
+          }}
+        />
 
-          <ul className="analyticsChartLegend">
-            <li className="legendListItem">
-              {" "}
-              <Brightness1Icon
-                fontSize="Medium"
-                className="legendDifficultyIcon"
-              />{" "}
-              Difficulty{" "}
-            </li>
-            <li className="legendListItem">
-              {" "}
-              <Brightness1Icon
-                fontSize="Medium"
-                className="legendEnjoyabilityIcon"
-              />{" "}
-              Enjoyability
-            </li>
-          </ul>
-        </div>
+        <ul className="analyticsChartLegend">
+          <li className="legendListItem">
+            {" "}
+            <Brightness1Icon
+              fontSize="Medium"
+              className="legendDifficultyIcon"
+            />{" "}
+            Difficulty{" "}
+          </li>
+          <li className="legendListItem">
+            {" "}
+            <Brightness1Icon
+              fontSize="Medium"
+              className="legendEnjoyabilityIcon"
+            />{" "}
+            Enjoyability
+          </li>
+        </ul>
+      </div>
       <Link to="/studentList">
-              <button className="studentGoBackButton"> Back </button>
+        <button className="studentGoBackButton"> Back </button>
       </Link>
-
     </div>
   );
 };
