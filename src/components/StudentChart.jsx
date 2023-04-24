@@ -9,7 +9,6 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import "../CSS/studentChart.css";
 
 const StudentChart = ({ title, data, grid }) => {
   return (
