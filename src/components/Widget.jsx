@@ -1,5 +1,5 @@
 import React from "react";
-import StudentChart from "./Studentchart";
+import StudentChart from "../components/Studentchart";
 import studentsData from "../studentData.json";
 import "../CSS/widget.css";
 
