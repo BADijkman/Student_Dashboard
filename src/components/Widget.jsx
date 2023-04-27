@@ -1,5 +1,5 @@
 import React from "react";
-// import StudentChart from "../components/Studentchart";
+import StudentChart from "../components/Studentchart";
 import studentsData from "../studentData.json";
 import "../CSS/widget.css";
 
@@ -43,11 +43,11 @@ const Widget = () => {
   return (
     <div className="widget">
       <div className="widgetChartContainer">
-        {/* <StudentChart
+        <StudentChart
           data={averagesPerStudent}
           title="Student Analytics Enjoyability and Difficulty Per Student"
           grid
-        /> */}
+        />
       </div>
     </div>
   );
