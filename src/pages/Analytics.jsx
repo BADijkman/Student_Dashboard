@@ -3,7 +3,7 @@ import "../CSS/analytics.css";
 import Brightness1Icon from "@mui/icons-material/Brightness1";
 import studentsData from "../studentData.json";
 import Chart from "../components/Chart";
-import StudentChart from "../components/Studentchart";
+import Studentchart from "../components/Studentchart";
 
 const groupDataByKey = (key, data) => {
   return data.reduce((group, data) => {
@@ -117,7 +117,7 @@ const Analytics = () => {
       </div>
 
       <div className="analyticsChartContainer">
-        <StudentChart
+        <Studentchart
           data={averagesPerStudent}
           title="Student Analytics Enjoyability and Difficulty per Student"
           grid
