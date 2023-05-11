@@ -3,7 +3,7 @@ import "../CSS/analytics.css";
 import Brightness1Icon from "@mui/icons-material/Brightness1";
 import studentsData from "../studentData.json";
 import Chart from "../components/Chart";
-import StudentChart from "../components/Studentchart";
+import StudentChart from "../components/StudentChart";
 
 const groupDataByKey = (key, data) => {
   return data.reduce((group, data) => {
